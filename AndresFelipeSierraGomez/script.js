@@ -99,3 +99,10 @@ let usuarios2 = [
 
 let usuarioLuis = usuarios2.find(usuario => usuario.id === 102);
 console.log(usuarioLuis);
+
+// Ejercicio 13: Ordenar sin Mutar (sort)
+
+let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+let invitadosOrdenados = [...invitados].sort();
+
+console.log(invitadosOrdenados);
