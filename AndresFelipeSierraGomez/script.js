@@ -48,3 +48,12 @@ let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
 let listaPlana = grupos.reduce((acumulador, grupo) => acumulador.concat(grupo), []);
 
 console.log(listaPlana);
+
+// Ejercicio 7: Crear una Copia (slice)
+
+let original = ["A", "B", "C"];
+let clon = original.slice();
+clon.push("D");
+
+console.log(original);
+console.log(clon);
