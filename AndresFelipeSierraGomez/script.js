@@ -16,3 +16,10 @@ let usuarios = [
 
 let nombres = usuarios.map(usuario => usuario.nombre);
 console.log(nombres);
+
+// Ejercicio 3: Notas Aprobadas (filter)
+
+let notas = [8, 5, 10, 3, 7];
+let aprobadas = notas.filter(nota => nota >= 6);
+
+console.log(aprobadas);
