@@ -138,3 +138,17 @@ let tablero = ["X", "O", "X"];
 let nuevoTablero = tablero.map((valor, indice) => indice === 1 ? "X" : valor);
 
 console.log(nuevoTablero);
+
+// Ejercicio 18: Productos Caros (filter + map)
+
+let productos2 = [
+    { nombre: "Papas", precio: 2 },
+    { nombre: "Carne", precio: 15 },
+    { nombre: "Leche", precio: 3 }
+];
+
+let productosCaros = productos2
+    .filter(producto => producto.precio > 4)
+    .map(producto => producto.nombre);
+
+console.log(productosCaros);
