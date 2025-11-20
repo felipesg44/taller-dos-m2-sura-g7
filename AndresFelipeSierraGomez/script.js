@@ -152,3 +152,10 @@ let productosCaros = productos2
     .map(producto => producto.nombre);
 
 console.log(productosCaros);
+
+// Ejercicio 19: Añadir Noticia al Inicio (spread)
+
+let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+let nuevoFeed = ["Noticia Urgente", ...feed];
+
+console.log(nuevoFeed);
