@@ -159,3 +159,18 @@ let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
 let nuevoFeed = ["Noticia Urgente", ...feed];
 
 console.log(nuevoFeed);
+
+// Ejercicio 20: Desafío de Puntuación (filter + map + reduce)
+
+let puntuaciones = [50, 85, -10, 100, 0, 30];
+
+let puntuacionesValidas = puntuaciones.filter(puntuacion => puntuacion >= 0);
+let puntuacionesBonificadas = puntuacionesValidas.map(puntuacion => puntuacion + 10);
+let totalPuntos = puntuacionesBonificadas.reduce(
+    (acumulador, puntuacion) => acumulador + puntuacion,
+    0
+);
+
+console.log(puntuacionesValidas);
+console.log(puntuacionesBonificadas);
+console.log(totalPuntos);
