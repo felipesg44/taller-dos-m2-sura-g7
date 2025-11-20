@@ -113,3 +113,10 @@ let receta = ["Paso 1", "Paso 2", "Paso 3"];
 let recetaInversa = [...receta].reverse();
 
 console.log(recetaInversa);
+
+// Ejercicio 15: Eliminar sin Mutar (filter)
+
+let fila = ["Ana", "Luis", "Carlos", "Maria"];
+let nuevaFila = fila.filter(nombre => nombre !== "Luis");
+
+console.log(nuevaFila);
