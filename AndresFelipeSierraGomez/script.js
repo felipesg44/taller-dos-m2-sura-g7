@@ -41,3 +41,10 @@ let ventas = [150, 300, 100, 50];
 let totalVentas = ventas.reduce((acumulador, venta) => acumulador + venta, 0);
 
 console.log(totalVentas);
+
+// Ejercicio 6: Aplanar un Arreglo (reduce + concat)
+
+let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
+let listaPlana = grupos.reduce((acumulador, grupo) => acumulador.concat(grupo), []);
+
+console.log(listaPlana);
